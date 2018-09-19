@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View-->
+        <scene sceneID="ge9-D7-Qe9">
+            <objects>
+                <viewController storyboardIdentifier="BHFirstViewController" title="First View" id="0JC-0i-9tl" customClass="BHFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdm-GI-ePB"/>
+                        <viewControllerLayoutGuide type="bottom" id="uxo-YO-Q16"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Rz-cD-j8o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xd-QA-A7Z">
+                                <rect key="frame" x="110" y="264" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="e0W-Ba-PuW"/>
+                                    <constraint firstAttribute="width" constant="100" id="j7K-Ct-MyQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="0JC-0i-9tl" eventType="touchUpInside" id="VQ9-UW-imU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Xd-QA-A7Z" firstAttribute="centerY" secondItem="9Rz-cD-j8o" secondAttribute="centerY" id="Ghn-t0-X4q"/>
+                            <constraint firstItem="3Xd-QA-A7Z" firstAttribute="centerX" secondItem="9Rz-cD-j8o" secondAttribute="centerX" id="twR-bH-HRU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ju5-Nh-dKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="136"/>
+        </scene>
+        <!--Second View-->
+        <scene sceneID="XMs-zE-lVw">
+            <objects>
+                <viewController storyboardIdentifier="BHSecondViewController" title="Second View" id="FfT-Bc-DhW" customClass="BHSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Klh-vh-BVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="jFP-Lz-SYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e5g-a8-0iA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJI-7C-Cbg">
+                                <rect key="frame" x="110" y="264" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="IEp-R4-6B3"/>
+                                    <constraint firstAttribute="height" constant="40" id="w6x-4K-k2k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonClicked:" destination="FfT-Bc-DhW" eventType="touchUpInside" id="i0T-1U-Ct3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WJI-7C-Cbg" firstAttribute="centerY" secondItem="e5g-a8-0iA" secondAttribute="centerY" id="d3S-Xn-HQB"/>
+                            <constraint firstItem="WJI-7C-Cbg" firstAttribute="centerX" secondItem="e5g-a8-0iA" secondAttribute="centerX" id="qGh-QW-mgf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceZ-ps-gLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="134"/>
+        </scene>
+        <!--Third View-->
+        <scene sceneID="1W9-zv-jnn">
+            <objects>
+                <viewController storyboardIdentifier="BHThirdViewController" title="Third View" id="jCB-Kb-U9C" customClass="BHThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f8l-H1-vjc"/>
+                        <viewControllerLayoutGuide type="bottom" id="JrP-Id-8rn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZF4-ig-0Vr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgr-3Y-hBR">
+                                <rect key="frame" x="85" y="264" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5Ka-t0-ANe"/>
+                                    <constraint firstAttribute="width" constant="150" id="ENv-7w-NXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Push Notify">
+                                    <color key="titleColor" red="1" green="0.84705882349999995" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushNotifyButtonClicked:" destination="jCB-Kb-U9C" eventType="touchUpInside" id="hiC-kI-Ccd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cgr-3Y-hBR" firstAttribute="centerX" secondItem="ZF4-ig-0Vr" secondAttribute="centerX" id="KMf-R7-27Z"/>
+                            <constraint firstItem="cgr-3Y-hBR" firstAttribute="centerY" secondItem="ZF4-ig-0Vr" secondAttribute="centerY" id="KkM-iO-v3L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3P-0W-9Na" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937.5" y="130.98591549295776"/>
+        </scene>
+    </scenes>
+</document>
