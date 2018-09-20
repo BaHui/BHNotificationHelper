@@ -15,7 +15,7 @@
 
 @end
 
-static void *observers_key = &observers_key;
+static void *HelperPropertyKey = @"HelperPropertyKey";
 
 static NSString *const ObserverInfoNameKey = @"Name";
 static NSString *const ObserverInfoObserverKey = @"Observer";
@@ -82,11 +82,11 @@ static NSString *const ObserverInfoObserverKey = @"Observer";
 #pragma mark - Getter & Setter
 
 - (void)setHelperObserverInfos:(NSMutableArray *)helperObserverInfos {
-  objc_setAssociatedObject(self, &observers_key, helperObserverInfos, OBJC_ASSOCIATION_RETAIN);
+  objc_setAssociatedObject(self, HelperPropertyKey, helperObserverInfos, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (NSMutableArray *)helperObserverInfos {
-  return objc_getAssociatedObject(self, &observers_key);
+  return objc_getAssociatedObject(self, HelperPropertyKey);
 }
 
 #pragma mark - Private Methods
