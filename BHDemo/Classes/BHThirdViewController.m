@@ -7,6 +7,7 @@
 //
 
 #import "BHThirdViewController.h"
+#import "BHNotificationHelper.h"
 
 @interface BHThirdViewController ()
 
@@ -28,13 +29,17 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 }
 
 - (void)dealloc {
-  NSLog(@"BHThirdViewController dealloc !");
+  NSLog(@"ThirdView Dealloc!");
 }
 
 #pragma mark - IBAction Methods
 
-- (IBAction)pushNotifyButtonClicked:(id)sender {
+- (IBAction)postFistViewNotifyButtonClicked:(id)sender {
+  [self postNotificationForName:BHChangeFirstTitleNFName userInfo:@{@"title" : @"changed form third view notify!"}];
+}
 
+- (IBAction)postSecondNotifyViewButtonClicked:(id)sender {
+  [self postNotificationForName:BHChangeSecondBGColorNFName userInfo:@{@"color" : [UIColor blueColor]}];
 }
 
 @end

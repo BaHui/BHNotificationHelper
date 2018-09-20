@@ -10,6 +10,7 @@
 		6F151989215277D600207623 /* BHThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F151983215277D500207623 /* BHThirdViewController.m */; };
 		6F15198A215277D600207623 /* BHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F151984215277D500207623 /* BHSecondViewController.m */; };
 		6F15198B215277D600207623 /* BHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F151985215277D500207623 /* BHFirstViewController.m */; };
+		6F1929712153394B009FD1E7 /* BHNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1929702153394B009FD1E7 /* BHNotificationHelper.m */; };
 		6FE8F9B52150E8D400107C93 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */; };
 		6FE8F9BD2150E8D500107C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE8F9BC2150E8D500107C93 /* Assets.xcassets */; };
 		6FE8F9C32150E8D500107C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE8F9C22150E8D500107C93 /* main.m */; };
@@ -24,6 +25,9 @@
 		6F151986215277D600207623 /* BHThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHThirdViewController.h; path = Classes/BHThirdViewController.h; sourceTree = "<group>"; };
 		6F151987215277D600207623 /* BHFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHFirstViewController.h; path = Classes/BHFirstViewController.h; sourceTree = "<group>"; };
 		6F151988215277D600207623 /* BHSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BHSecondViewController.h; path = Classes/BHSecondViewController.h; sourceTree = "<group>"; };
+		6F19296F2153394B009FD1E7 /* BHNotificationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BHNotificationHelper.h; path = BHNotificationHelper/BHNotificationHelper.h; sourceTree = SOURCE_ROOT; };
+		6F1929702153394B009FD1E7 /* BHNotificationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BHNotificationHelper.m; path = BHNotificationHelper/BHNotificationHelper.m; sourceTree = SOURCE_ROOT; };
+		6F19299D21539C43009FD1E7 /* BHNotificationName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BHNotificationName.h; path = BHNotificationHelper/BHNotificationName.h; sourceTree = SOURCE_ROOT; };
 		6FE8F9B02150E8D400107C93 /* BHDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE8F9B32150E8D400107C93 /* BHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
 		6FE8F9B42150E8D400107C93 /* BHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +53,9 @@
 		6F1519822152778600207623 /* NotificationHelper */ = {
 			isa = PBXGroup;
 			children = (
+				6F19299D21539C43009FD1E7 /* BHNotificationName.h */,
+				6F19296F2153394B009FD1E7 /* BHNotificationHelper.h */,
+				6F1929702153394B009FD1E7 /* BHNotificationHelper.m */,
 			);
 			name = NotificationHelper;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 			files = (
 				6F15198A215277D600207623 /* BHSecondViewController.m in Sources */,
 				6FE8F9C32150E8D500107C93 /* main.m in Sources */,
+				6F1929712153394B009FD1E7 /* BHNotificationHelper.m in Sources */,
 				6FE8F9B52150E8D400107C93 /* BHAppDelegate.m in Sources */,
 				6F151989215277D600207623 /* BHThirdViewController.m in Sources */,
 				6F15198B215277D600207623 /* BHFirstViewController.m in Sources */,

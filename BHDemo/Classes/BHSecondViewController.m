@@ -8,6 +8,7 @@
 
 #import "BHSecondViewController.h"
 #import "BHThirdViewController.h"
+#import "BHNotificationHelper.h"
 
 @interface BHSecondViewController ()
 
@@ -29,7 +30,7 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 }
 
 - (void)dealloc {
-  NSLog(@"BHSecondViewController dealloc !");
+  NSLog(@"SecondView Dealloc!");
 }
 
 #pragma mark - IBAction Methods
@@ -37,6 +38,25 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 - (IBAction)nextButtonClicked:(id)sender {
   BHThirdViewController *thirdViewController = [BHThirdViewController create];
   [self.navigationController pushViewController:thirdViewController animated:YES];
+}
+
+- (IBAction)pushNotifyButtonClicked:(id)sender {
+  [self postNotificationForName:BHChangeFirstTitleNFName userInfo:@{@"title" : @"first title changed"}];
+  [self postNotificationForName:BHChangeFirstBGColorNFName userInfo:@{@"color" : [UIColor redColor]}];
+}
+
+- (IBAction)addObserverButtonClicked:(id)sender {
+  __weak typeof(self) weakSelf = self;
+
+  [self addNotificationForName:BHChangeSecondBGColorNFName response:^(NSDictionary *userInfo) {
+    NSLog(@"Second view BG color changed!");
+    UIColor *color = [userInfo objectForKey:@"color"];
+    weakSelf.view.backgroundColor = color;
+  }];
+}
+
+- (IBAction)removeObserverButtonClicked:(id)sender {
+  [self removeNotificationForName:BHChangeSecondBGColorNFName];
 }
 
 @end
