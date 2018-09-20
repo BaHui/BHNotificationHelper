@@ -79,7 +79,7 @@ static NSString *const ObserverInfoObserverKey = @"Observer";
   [self helper_dealloc];
 }
 
-#pragma mark - Getter & Setter
+#pragma mark - Getter & Setter (内部实现使用runtime动态增加属性 并进行存取);
 
 - (void)setHelperObserverInfos:(NSMutableArray *)helperObserverInfos {
   objc_setAssociatedObject(self, HelperPropertyKey, helperObserverInfos, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
