@@ -15,8 +15,10 @@
 
 @end
 
+// 关联属性的key
 static void *HelperPropertyKey = @"HelperPropertyKey";
 
+// 存储ObserInfo的key&value
 static NSString *const ObserverInfoNameKey = @"Name";
 static NSString *const ObserverInfoObserverKey = @"Observer";
 
@@ -79,7 +81,7 @@ static NSString *const ObserverInfoObserverKey = @"Observer";
   [self helper_dealloc];
 }
 
-#pragma mark - Getter & Setter (内部实现使用runtime动态增加属性 并进行存取);
+#pragma mark - Getter & Setter (内部实现使用runtime动态关联属性);
 
 - (void)setHelperObserverInfos:(NSMutableArray *)helperObserverInfos {
   objc_setAssociatedObject(self, HelperPropertyKey, helperObserverInfos, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

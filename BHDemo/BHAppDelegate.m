@@ -35,7 +35,6 @@
   NSLog(@"applicationWillEnterForeground");
 }
 
-
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   NSLog(@"applicationDidBecomeActive");
 }
