@@ -16,7 +16,7 @@
  * @param notificationName 通知名称
  * @param response 收到通知的响应
  */
-- (void)addNotificationForName:(NSString *)notificationName response:(void (^)(NSDictionary * userInfo))response;
+- (void)addNotificationForName:(NSString *)notificationName response:(void (^)(NSDictionary *userInfo))response;
 
 /**
  * 仅用于移除单个通知

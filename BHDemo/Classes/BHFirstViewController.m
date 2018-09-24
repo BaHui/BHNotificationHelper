@@ -29,6 +29,10 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
   [super viewDidLoad];
 }
 
+- (void)dealloc {
+	NSLog(@"BHFirstViewController dealloc!");
+}
+
 #pragma mark - IBAction Methods
 
 - (IBAction)nextButtonClicked:(id)sender {
@@ -39,6 +43,7 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 - (IBAction)addObserverButtonClicked:(id)sender {
   __weak typeof(self) weakSelf = self;
 
+	// 添加改变标题的观察者
   [self addNotificationForName:BHChangeFirstTitleNFName response:^(NSDictionary *userInfo) {
     NSLog(@"First view title changed");
 
@@ -46,6 +51,7 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
     weakSelf.navigationItem.title = title;
   }];
 
+	// 添加改变背景颜色的观察者
   [self addNotificationForName:BHChangeFirstBGColorNFName response:^(NSDictionary *userInfo) {
     NSLog(@"First view color changed");
 
@@ -55,6 +61,7 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 }
 
 - (IBAction)removeObserverButtonClicked:(id)sender {
+	// 移除单个通知
   [self removeNotificationForName:BHChangeFirstTitleNFName];
 }
 

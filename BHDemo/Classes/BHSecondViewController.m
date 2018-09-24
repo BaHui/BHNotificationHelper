@@ -30,7 +30,7 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 }
 
 - (void)dealloc {
-  NSLog(@"SecondView Dealloc!");
+  NSLog(@"BHSecondViewController dealloc!");
 }
 
 #pragma mark - IBAction Methods
